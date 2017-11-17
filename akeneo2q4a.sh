@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo 'Remove Q4OS UX';
+sudo apt remove tdm-trinity --allow-remove-essential -y
+
 echo 'Curl Vim';
 sudo apt-get install curl -y;
 sudo apt install vim -y;
