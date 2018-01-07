@@ -32,6 +32,10 @@ sudo a2enconf php7.1-fpm;
 sudo systemctl restart apache2;
 # sudo apt install apache2 -y; sudo apt install libapache2-mod-fcgid -y; sudo a2enmod rewrite proxy_fcgi; sudo a2enconf php7.1-fpm; sudo systemctl restart apache2;
 
+echo 'Instal composer';
+sudo wget https://getcomposer.org/download/1.6.2/composer.phar -O /usr/local/bin/composer;
+sudo chmod +x /usr/local/bin/composer;
+
 echo 'Install phpmyadmin';
 cd /usr/share/;
 sudo wget https://files.phpmyadmin.net/phpMyAdmin/4.7.7/phpMyAdmin-4.7.7-all-languages.zip;
